@@ -1,0 +1,3 @@
+{"id":"plain-echo","prompt":"Reply with exactly the word PONG.","requiredTerms":["pong"]}
+{"id":"simple-html","prompt":"Write a one-line HTML paragraph that displays Hello Maya.","requiredTerms":["<p>","hello maya","</p>"]}
+{"id":"javascript-function","prompt":"Write a JavaScript function named add that returns the sum of a and b.","requiredTerms":["function add","return"]}

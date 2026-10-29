@@ -1,0 +1,19 @@
+{
+  "name": "Maya Local LLM",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [3000, 3001],
+  "portsAttributes": {
+    "3000": { "label": "Maya API" },
+    "3001": { "label": "Maya" }
+  },
+  "postCreateCommand": "npm ci && npm --prefix frontend ci",
+  "postStartCommand": "npm run build",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint"]
+    }
+  }
+}

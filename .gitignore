@@ -1,0 +1,16 @@
+node_modules/
+.env
+npm-debug.log*
+.DS_Store
+.ollama/
+*.gguf
+*.safetensors
+coverage/
+dist/
+__pycache__/
+*.py[cod]
+training/datasets/
+training/splits/
+training/artifacts/
+learning.json
+.learning-*.tmp

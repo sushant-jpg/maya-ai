@@ -1,0 +1,25 @@
+{
+  "name": "maya-local-llm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "server": "node server/server.js",
+    "test": "node --test tests/*.test.js && npm --prefix frontend test",
+    "check": "node --check server/app.js && node --check server/ollama.js && node --check server/lm-studio.js && node --check server/cloud-providers.js && node --check server/rag.js && node --check server/search.js && node --check server/workspace.js && node --check server/learning.js && node --check server/server.js && node --check scripts/evaluate-model.mjs",
+    "build": "npm run check && npm --prefix frontend run build",
+    "evaluate": "node scripts/evaluate-model.mjs",
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "chromadb": "^3.5.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
+    "multer": "^2.5.0",
+    "pdf-parse": "^2.4.5"
+  },
+  "devDependencies": {
+    "supertest": "^7.2.2"
+  }
+}
